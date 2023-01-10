@@ -6,12 +6,6 @@ pipeline{
 	}
 
 	stages {
-		stage('gitclone') {
-			steps {
-				git 'https://github.com/raulmoes/apache-dockerfile.git'
-				sh 'cd apache-dockerfile'
-			}
-		}
 		stage('Build') {
 
 			steps {
