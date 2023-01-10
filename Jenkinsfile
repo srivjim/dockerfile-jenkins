@@ -21,6 +21,7 @@ pipeline{
 
 		stage('Push') {
 			steps {
+				sh 'sudo docker tag apacheraul/apacheraul:latest'
 				sh 'sudo docker push apacheraul/apacheraul:latest'
 			}
 		}
