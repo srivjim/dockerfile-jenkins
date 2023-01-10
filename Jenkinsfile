@@ -9,7 +9,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'sudo docker build -t apacheraul/apacheraul:latest .'
+				sh 'sudo docker build -t raulmoess/apacheraul:latest .'
 			}
 		}
 
@@ -21,8 +21,7 @@ pipeline{
 
 		stage('Push') {
 			steps {
-				sh 'sudo docker tag apacheraul/apacheraul:latest'
-				sh 'sudo docker push apacheraul/apacheraul:latest'
+				sh 'sudo docker push raulmoess/apacheraul:latest'
 			}
 		}
 	}
