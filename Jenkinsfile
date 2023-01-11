@@ -9,7 +9,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'sudo docker build -t raulmoess/apacheraul:latest .'
+				sh 'sudo docker build -t raulmoess/apacherauljenkinsfile:latest .'
 			}
 		}
 
@@ -21,7 +21,7 @@ pipeline{
 
 		stage('Push') {
 			steps {
-				sh 'sudo docker push raulmoess/apacheraul:latest'
+				sh 'sudo docker push raulmoess/apacherauljenkinsfile:latest'
 			}
 		}
 	}
